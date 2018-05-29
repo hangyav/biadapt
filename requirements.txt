@@ -1,0 +1,8 @@
+nltk==3.3.0
+numpy==1.14.3
+Cython==0.28.3
+pandas==0.20.2
+scikit-learn==0.18.2
+scipy==1.1.0
+tweet-preprocessor==0.5.0
+https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.2.1-cp35-cp35m-linux_x86_64.whl
