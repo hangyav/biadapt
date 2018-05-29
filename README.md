@@ -2,7 +2,7 @@
 
 TODO description
 
-##Cite
+## Cite
 
 TODO
 
@@ -29,7 +29,7 @@ TODO
 
 ### Semi-supervised
 
-* For the semi-supervised system for sentiment we modified the original implementation of [(Haeusser et al. (2017))](https://github.com/haeusser/learning_by_association)
+* For the semi-supervised system for sentiment we modified the original implementation of [(Haeusser et al. 2017)](https://github.com/haeusser/learning_by_association)
 * We added the implementation of [(Kim (2014)’s CNN-non-static)](https://github.com/yoonkim/CNN_sentence)
 * An example script demonstrating the use of the system: *scripts/run_semisup_sentiment.sh*
 
@@ -38,7 +38,7 @@ TODO
 
 ### Cosine similarity
 
-TODO
+* *scripts/bll_with_threshold.py*: also use for fine tuning of the threshold on the developement set (use *-h* to get input parameters)
 
 ### Classifier
 
