@@ -51,6 +51,11 @@ We use off-the-shelf systems for downstream tasks. The modified code can also be
 
 ### Data
 
+* Domain specific data: TODO
+* General domain data: [OpenSubtitles](http://opus.nlpl.eu/OpenSubtitles2016.php) parallel corpus
+* Bilingual lexicon: BNC included in this repository
+* Sentiment data: [RepLab](http://nlp.uned.es/replab2013/)
+
 ## Bilingual Lexicon Induction
 
 
@@ -60,11 +65,12 @@ We use off-the-shelf systems for downstream tasks. The modified code can also be
 
 ### Classification
 
-As the classifier to perform BLI we used the method introduced by [Heyman et al., 2017](http://liir.cs.kuleuven.be/software_pages/bilingual_classifier_eacl.php).
+As the classifier to perform BLI we used the method introduced by [(Heyman et al., 2017)](http://liir.cs.kuleuven.be/software_pages/bilingual_classifier_eacl.php).
 
 #### Requirements
 
 * A different environment is needed due to the use of Python 2.7 in the original code of the classifier
+* An easy way to deal with different environments is [Conda](https://conda.io)
 * dependencies in BLI_classifier/requirements.txt
 
 ```sh
@@ -79,6 +85,10 @@ As the classifier to perform BLI we used the method introduced by [Heyman et al.
 
 #### Semi-supervised
 
-TODO
+* An example script demonstrating the use of the system: *scripts/run_BLI_classifier_semisup.sh*
 
 ### Data
+
+* Domain specific data and train/dev/test lexicons: Medical corpus and lexicons can be downloaded form [here](http://liir.cs.kuleuven.be/software_pages/bilingual_classifier_eacl.php) or by running: *scripts/get_eacl_data.sh*
+* General domain data: [Europarl (v7)](http://www.statmt.org/europarl)
+* Bilingual lexicon: BNC included in this repository

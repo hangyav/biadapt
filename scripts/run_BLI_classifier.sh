@@ -4,7 +4,7 @@ PYTHON=python
 THREADS=10
 GPUS=0
 
-#
+# to merge separate source/target embedding files use:  BLI_classifier/convert_mwe2bwe.py
 BWE_model='BLI_classifier/eacl_data/ennl.bwesg.dim=50.window=100.bin'
 MWE_model='BLI_classifier/eacl_data/ennl.mono.dim=50.bin' # can be BWE as well
 train_lexicon=BLI_classifier/eacl_data/lex.filtered.train80-20.txt

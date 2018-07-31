@@ -7,7 +7,7 @@ labeled_data=
 unlabeled_data=
 dev_data=
 
-# Source and target language bilingual word embeddings
+# Source (En) and target (Es) language bilingual word embeddings
 w2v1=
 w2v2=
 
