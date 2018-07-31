@@ -1,10 +1,25 @@
 # Methods for Domain Adaptation of Bilingual Tasks
 
-TODO description
+This repository contains implementation of the work *[Two Methods for Domain Adaptation of Bilingual Tasks: Delightfully Simple and Broadly Applicable](http://aclweb.org/anthology/P18-1075)*.
 
 ## Cite
 
-TODO
+```
+@InProceedings{P18-1075,
+  author = 	"Hangya, Viktor
+  		and Braune, Fabienne
+		and Fraser, Alexander
+		and Sch{\"u}tze, Hinrich",
+  title = 	"Two Methods for Domain Adaptation of Bilingual Tasks: Delightfully Simple and Broadly Applicable",
+  booktitle = 	"Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+  year = 	"2018",
+  publisher = 	"Association for Computational Linguistics",
+  pages = 	"810--820",
+  location = 	"Melbourne, Australia",
+  url = 	"http://aclweb.org/anthology/P18-1075"
+}
+
+```
 
 ## Requirements
 
