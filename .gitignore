@@ -4,3 +4,4 @@ tmp
 *.swp
 *.pyc
 *.ipynb_checkpoints
+BLI_classifier/eacl_data

@@ -1,6 +1,7 @@
 # Methods for Domain Adaptation of Bilingual Tasks
 
 This repository contains implementation of the work *[Two Methods for Domain Adaptation of Bilingual Tasks: Delightfully Simple and Broadly Applicable](http://aclweb.org/anthology/P18-1075)*.
+We use off-the-shelf systems for downstream tasks. The modified code can also be found in the repository.
 
 ## Cite
 
@@ -32,7 +33,7 @@ This repository contains implementation of the work *[Two Methods for Domain Ada
 
 ## Cross Lingual Sentiment Classification
 
-### Target-ignorant
+### Target-ignorant system
 
 * Follow the procedure at section _Semi-supervised_ below
 * Set visit and walker weights to 0.0
@@ -48,6 +49,8 @@ This repository contains implementation of the work *[Two Methods for Domain Ada
 * We added the implementation of [(Kim (2014)’s CNN-non-static)](https://github.com/yoonkim/CNN_sentence)
 * An example script demonstrating the use of the system: *scripts/run_semisup_sentiment.sh*
 
+### Data
+
 ## Bilingual Lexicon Induction
 
 
@@ -55,10 +58,27 @@ This repository contains implementation of the work *[Two Methods for Domain Ada
 
 * *scripts/bll_with_threshold.py*: also use for fine tuning of the threshold on the developement set (use *-h* to get input parameters)
 
-### Classifier
+### Classification
+
+As the classifier to perform BLI we used the method introduced by [Heyman et al., 2017](http://liir.cs.kuleuven.be/software_pages/bilingual_classifier_eacl.php).
+
+#### Requirements
+
+* A different environment is needed due to the use of Python 2.7 in the original code of the classifier
+* dependencies in BLI_classifier/requirements.txt
+
+```sh
+	pip install -r BLI_classifier/requirements.txt
+```
+
+#### Classifier
+
+* To download data, embeddings and lexicon released by (Heyman et al., 2017) run: *scripts/get_eacl_data.sh*
+* An example script demonstrating the use of the system: *scripts/run_BLI_classifier.sh*
+
+
+#### Semi-supervised
 
 TODO
 
-### Semi-supervised
-
-TODO
+### Data
