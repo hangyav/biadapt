@@ -94,6 +94,6 @@ As the classifier to perform BLI we used the method introduced by [(Heyman et al
 
 ### Data
 
-* Domain specific data and train/dev/test lexicons: Medical corpus and lexicons can be downloaded form [here](http://liir.cs.kuleuven.be/software_pages/bilingual_classifier_eacl.php) or by running: *scripts/get_eacl_data.sh*
+* Domain specific data and train/dev/test lexicons: [Link](http://liir.cs.kuleuven.be/software_pages/bilingual_classifier_eacl.php) or by running: *scripts/get_eacl_data.sh*
 * General domain data: [Europarl (v7)](http://www.statmt.org/europarl)
 * Bilingual lexicon: BNC included in this repository
