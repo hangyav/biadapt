@@ -1,9 +1,7 @@
 #!/bin/bash
 
-#PYTHON2=python2.7
-#PYTHON3=python3.5
-PYTHON2=/mounts/Users/student/hangyav/.anaconda/envs/bwe_adapt2/bin/python
-PYTHON3=/mounts/Users/student/hangyav/.anaconda/envs/bwe_adapt/bin/python
+PYTHON2=~/.anaconda/envs/python2.7/bin/python
+PYTHON3=~/.anaconda/envs/python3.5/bin/python
 THREADS=10
 GPUS=0
 
@@ -12,12 +10,15 @@ BWE_model='BLI_classifier/eacl_data/ennl.bwesg.dim=50.window=100.bin'
 # change this to the produced adapted BWE model
 adapted_BWE_model=$BWE_model
 MWE_model='BLI_classifier/eacl_data/ennl.mono.dim=50.bin' # can be BWE as well
+
 # source (En) and target (Nl) language (mapped) adapted embeddings (only needed with ruc=1)
-SOURCE_BWE=/mounts/work/hangyav/project_tmp/BLI/vec/heyman_articles_nl__europarl-v7.nl-en.nl.clean.vec
-TARGET_BWE=/mounts/work/hangyav/project_tmp/BLI/vec/mapped/heyman_articles_en__europarl-v7.nl-en.en.clean__mapped_to_nl__lex.filtered.train80-20.vec
+SOURCE_BWE=
+TARGET_BWE=
+
 train_lexicon=BLI_classifier/eacl_data/lex.filtered.train80-20.txt
 test_lexicon=BLI_classifier/eacl_data/lex.filtered.test80-20.txt
 
+# walker, visit and logit loss weights
 ww=1.0
 vw=0.5
 lw=1.0

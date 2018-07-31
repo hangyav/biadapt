@@ -51,7 +51,12 @@ We use off-the-shelf systems for downstream tasks. The modified code can also be
 
 ### Data
 
-* Domain specific data: TODO
+* Domain specific data: We provide the tweet IDs for the 22M_tweets dataset, run:
+
+```
+wget http://www.cis.uni-muenchen.de/~hangyav/data/22M_tweet_ids.tar.bz2 -O - | tar -xj
+```
+
 * General domain data: [OpenSubtitles](http://opus.nlpl.eu/OpenSubtitles2016.php) parallel corpus
 * Bilingual lexicon: BNC included in this repository
 * Sentiment data: [RepLab](http://nlp.uned.es/replab2013/)

@@ -5,3 +5,4 @@ tmp
 *.pyc
 *.ipynb_checkpoints
 BLI_classifier/eacl_data
+data/22M_tweets
